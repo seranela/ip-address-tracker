@@ -7,6 +7,7 @@
 
 	/* Colors */
 
+	--color-primary-black: hsl(0, 0%, 0%);
 	--color-primary-extra-dark-gray: hsl(0, 0%, 17%);
 	--color-primary-dark-gray: hsl(0, 0%, 46%);
 	--color-primary-light-gray: hsl(0, 0%, 87%); /* Large screen info divider line */
@@ -41,7 +42,7 @@ img {
 /* Body */
 
 body {
-	color: var(--color-primary-extra-dark-gray);
+	color: var(--color-primary-black);
 	font: 400 1rem var(--font-main);
 	text-rendering: optimizeSpeed;
 	min-height: 100vh;
@@ -123,18 +124,18 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: var(--color-primary-extra-dark-gray);
+	background-color: var(--color-primary-black);
 	font: inherit;
 	border: none;
 	border-radius: 0 14px 14px 0;
 	width: 4rem;
 	height: 3.6rem;
 	cursor: pointer;
-	transition: filter 0.3s;
+	transition: background-color 0.3s;
 }
 
 .button-search:hover {
-	filter: brightness(140%);
+	background-color: var(--color-primary-extra-dark-gray);
 }
 
 /* Results */
@@ -172,7 +173,7 @@ body {
 	font-size: clamp(1.25rem, 2vw, 1.6rem);
 	font-weight: 500;
 	letter-spacing: -0.04em;
-	color: var(--color-primary-extra-dark-gray);
+	color: var(--color-primary-black);
 	margin: 0;
 	text-align: center;
 }
